@@ -1,24 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <form>
+    <form >
         <input type="text" placeholder="Search City ...">
 
         <ul>
-            <li>test 1</li>
-            <li>test 2</li>
-            <li>test 3</li>
-            <li>test 4</li>
-            <li>test 5</li>
+
         </ul>
     </form>
-    
+
+    <div id="weather" style="display: none;">
+        <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="" id="icon">
+        <h1 id="degrees">20&deg;C</h1>
+        <h2 id="city">London</h2>
+        <button id="change">change city</button>
+
+        <div class="info">
+            <div>
+                <h3>Wind</h3>
+                <div id="windValue" class="value">2<span>km/h</span></div>
+            </div>
+            <div>
+                <h3>Feels like</h3>
+                <div id="feelsLikeValue" class="value">2<span>km/h</span></div>
+            </div>
+            <div>
+                <h3>Humidity</h3>
+                <div id="humidityValue" class="value">2<span>km/h</span></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="weather.js"></script>
+
 </body>
+
 </html>
